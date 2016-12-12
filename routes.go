@@ -25,6 +25,12 @@ var routes = Routes{
 		UserIndex,
 	},
 	Route{
+		"UserCreate",
+		"POST",
+		"/users",
+		UserCreate,
+	},
+	Route{
 		"UserShow",
 		"GET",
 		"/users/{userId}",
@@ -33,7 +39,13 @@ var routes = Routes{
 	Route{
 		"InvoiceIndex",
 		"GET",
-		"/invoice",
+		"/invoices",
 		InvoiceIndex,
+	},
+	Route{
+		"InvoiceCreate",
+		"POST",
+		"/invoices",
+		InvoiceCreate,
 	},
 }
