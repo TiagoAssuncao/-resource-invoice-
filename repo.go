@@ -8,8 +8,8 @@ var users Users
 
 // Give us some seed data
 func init() {
-	RepoCreateUser(User{Name: "Write presentation"})
-	RepoCreateUser(User{Name: "Host meetup"})
+	RepoCreateUser(User{FirstName: "Tiago"})
+	RepoCreateUser(User{FirstName: "Hervylla"})
 }
 
 func RepoFindUser(id int) User {
