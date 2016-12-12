@@ -30,4 +30,10 @@ var routes = Routes{
 		"/users/{userId}",
 		UserShow,
 	},
+	Route{
+		"InvoiceIndex",
+		"GET",
+		"/invoice",
+		InvoiceIndex,
+	},
 }
