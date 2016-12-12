@@ -15,7 +15,7 @@ func init() {
 func RepoFindUser(id int) User {
 	for _, u := range users {
 		if u.Id == id {
-			return t
+			return u
 		}
 	}
 	// return empty User if not found
@@ -27,7 +27,7 @@ func RepoCreateUser(u User) User {
 	currentId += 1
 	u.Id = currentId
 	users = append(users, u)
-	return t
+	return u
 }
 
 func RepoDestroyUser(id int) error {
